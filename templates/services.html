@@ -1,9 +1,63 @@
 {% extends "base.html" %}
 
 
-{% block title %} Services {% endblock title%}
+{% block title %} Certificates {% endblock title%}
 
 {% block body %}
-This is Services body
+<html style="background: #252a32;">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Syahrizaldev">
+<link rel="stylesheet" href="/static/css/cer_new.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+<main class="main" style="background: #252a32;">
+    <div class="container" style="background: currentColor;">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-image">
+                        <img src="/static/photo/cer1.png" alt="Image Slider" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-image">
+                        <img src="/static/photo/cer2.png" alt="Image Slider" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-image">
+                        <img src="/static/photo/cer4.png" alt="Image Slider" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-image">
+                        <img src="/static/photo/0001.png" alt="Image Slider" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-image">
+                        <img src="/static/photo/cer5.jpg" alt="Image Slider" />
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-button-next">
+                <i class="fas fa-chevron-circle-right arrow-icon" style="color: #252a32;"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fas fa-chevron-circle-left arrow-icon"style="color: #252a32;"></i>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/static/css/cer_new.js"></script>
+</html>
+
 {% endblock body %}
 

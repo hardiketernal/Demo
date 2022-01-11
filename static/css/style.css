@@ -403,13 +403,13 @@ video {
     content:"Hello.";
 }
 .label-hello:hover:after{
-	content:"About";
+	content:"Resume.";
 }
 .label-iam:after{
     content:"I am";
 }
 .label-iam:hover:after{
-	content:"Cert.";
+	content:"Certi.";
 }
 .label-Hardik:after{
     content:"Hardik";
@@ -453,20 +453,20 @@ video {
 .delay10 { -webkit-animation-delay: 1s; animation-delay: 1s;}
 .delay12 { -webkit-animation-delay: 1.2s; animation-delay: 1.2s;}
 
-/* ------ Background photo ------ */
+/* ------ Background photo 1------ */
 .bg-photo {
 	z-index: -9;
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 0;
-	background-image: url(/static/h.jpg);
+	left: 60%;
+	background-image: url(../static/);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	 background-size: cover;
+	background-size: cover;
 
 	-webkit-animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
 	-moz-animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
@@ -475,24 +475,76 @@ video {
 	-moz-animation-fill-mode:backwards;
 	animation-fill-mode:backwards;
 }
+
 	@media screen and (max-width: 767px) {
 		.bg-photo {
-		-webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
-		-moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+			-webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+			-moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
 		animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+	}
+	}
+	@-webkit-keyframes bg-photo {
+	0% {opacity: 0.1;transform: scale(1.1);}
+	100% {opacity:1;transform: scale(1);}
+}
+
+@keyframes bg-photo {
+	0% {opacity: 0.1;transform: scale(2.5);}
+	100% {opacity: 0.1;transform: scale(1);}
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+    .bg-photo {
+        background-image: url(../static/h.png);
+    }
+}
+@media screen and (max-width:480px) {
+	.bg-photo {
+		left: -8%;
+		background-image: url(../static/h.png);
+	}
+}
+
+
+/* ------ Background photo 2------ */
+.bg-photos {
+	z-index: -9;
+	position: fixed;
+	top: 0;
+	 bottom: 0;
+	 left: 0;
+	right: 0;
+	background-image: url(/static/h.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	 background-size: cover;
+
+	-webkit-animation:bg-photos 1.2s cubic-bezier(.5, .6, .6, 1);
+	-moz-animation:bg-photos 1.2s cubic-bezier(.5, .6, .6, 1);
+	animation:bg-photos 1.2s cubic-bezier(.5, .6, .6, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+	@media screen and (max-width: 767px) {
+		.bg-photos {
+		-webkit-animation:bg-photos .6s cubic-bezier(.5, .6, .6, 1);
+		-moz-animation:bg-photos .6s cubic-bezier(.5, .6, .6, 1);
+		animation:bg-photos .6s cubic-bezier(.5, .6, .6, 1);
 		}
 	}
-@-webkit-keyframes bg-photo {
+@-webkit-keyframes bg-photos {
 	0% {opacity: 0;transform: scale(1.1);}
 	100% {opacity: 1;transform: scale(1);}
 }
 
-@keyframes bg-photo {
+@keyframes bg-photos {
 	0% {opacity: 0;transform: scale(1.1);}
 	100% {opacity: 1;transform: scale(1);}
 }
 		@media screen and (max-width:480px) {
-			.bg-photo {
+			.bg-photos {
 				left: -8%;
 			}
 		}

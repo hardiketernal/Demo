@@ -4,50 +4,166 @@
 {% block title %} About {% endblock title%}
 
 {% block body %}
-<html>    
-<body class="website-background-black">		
-	<div class="max-width">
-		<div class="logo">
-			<div class="logo-inner">
-				<a href="../">
-					<div class="label-logo on-hover--40 text-color-white"></div>
-				</a>
-			</div>
-		</div>
-		
-	<div class="top-bottom-margin">
-		<div class="hide-text-block">
-			<h2 class="text-color-white animate">Let's make something great!</h2>
-		</div>		
-		
-		<div class="max-width-70 text-color-white animate delay02">
-			<h4>Contact</h4>
-			<p>
-I'm seeking out opportunities to collaborate with companies / agencies / individuals, not just work for them. I want to bring my collective design experience to the table where we can work together to solve real business-problems in a way that optimizes all of our respective experience and knowledge.
-			</p>
-			<p>
-I want to avoid subjective pissing-matches, and favor open-minded collaborators where egos are out of the equation. 
-If that all sounds about right, then lets for sure chat about how we can work together.
-			</p>
-			<p>
-Feel free to reach out through any platforms bellow:
-			</p>
 
-			<div class="links">
-				<a class="on-hover-40 text-color-red label-email copy-email"></a>
-				<a class="on-hover-40 text-color-red" href="https://dribbble.com/DejanMarkovic" target="_blank">Dribbble</a>
-				<a class="on-hover-40 text-color-red" href="https://instagram.com/dejanmarkovic90/" target="_blank">Instagram</a>
-				<a class="on-hover-40 text-color-red" href="https://twitter.com/dejanmrk" target="_blank">Twitter</a>
-				<a class="on-hover-40 text-color-red" href="https://www.linkedin.com/in/dejanmarkovic90" target="_blank">Linkedin</a>
-			</div>			
+{% comment %} ---------------------------------------Resume------------------------------------------------------------------------------------ {% endcomment %}
 
-		</div>
-	</div>
-	
- </div> 
+<link href="/static/css/resume.css" rel="stylesheet" type="text/css">
+<div class="resume">
+    <div class="base">
+        <div class="profile">
+            <div class="photo"><img src="/static/hb.svg"style="background: #fafff400;"/></div>
+            <div class="info">
+                <h4 class="name">Hardik Bhandari</h4><small class="job">Full Stack Web Developer</small>
+            </div>
+        </div>
+        <div class="about">
+            <h3>About me</h3>Hi! I am currently studying hard. I hope my progress and growth can be seen. Please advise.welcome to communicate
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <div class="call"><i class="fa fa-phone"></i><span>+91 9754262629</span></div>
+            <div class="address"><i class="fa fa-map-marker"></i><span>Indore,India</span></div>
+            <div class="email"><i class="fa fa-envelope"></i><span style="font-size: x-small;">Hardik.work@protonmail.com</span></div>
+            <div class="website"><a href="http://bhandarihardik52.pythonanywhere.com/" target="_blank"> <i class="fa fa-home"></i><span>bhandarihardik52</span></a></div>
+        </div>
+        <div class="follow">
+            <h3>Certificates</h3>
+            <div class="box"><a href="https://www.sololearn.com/certificates/course/en/21527226/1073/landscape/png"><i class="fab fa-python"></i></a><a href="https://www.guvi.in/verify-certificate?id=Lqg9N111J70T16068a&pro=1" target="_blank"><i class="fab fa-python"></i></a></div>
+        </div>
+        <div class="follow">
+            <h3>Profile's</h3>
+            <div class="box"><a href="https://github.com/bhandarihardik"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/hardik-work/"><i class="fab fa-linkedin"></i></a></div>
+        </div>
+    </div>
+    <div class="func">
+        <div class="edu">
+            <h3><i class="fa fa-graduation-cap"></i>Education</h3>
+            <ul>
+                <li><span>School of computer,IPS Academy,Indore</span><small>MCA-Master of Computer Application</small><small>2020 - 2022</small></li>
+                <li><span>G.L.S University, Ahmedabad</span><small>BCA-Bechelor of Computer Application</small><small>2017 - 2020</small></li>
+                <li><span>Imperial International School,Khachrod</span><small>Higher Secondary</small><small>2016 - 2017</small></li>
+            </ul>
+        </div>
+        <div class="skills-prog">
+            <h3><i class="fa fa-code"></i>Programming Skills</h3>
+            <ul>
+                <li data-percent="70"><span>HTML</span>
+                    <div class="skills-bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li data-percent="75"><span>CSS</span>
+                    <div class="skills-bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li data-percent="40"><span>C</span>
+                    <div class="skills-bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li data-percent="80"><span>Python</span>
+                    <div class="skills-bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li data-percent="50"><span>Django</span>
+                    <div class="skills-bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li data-percent="20"><span>MySql</span>
+                    <div class="skills-bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="skills-soft">
+            <h3><i class="fa fa-th-list"></i>Software Skills</h3>
+            <ul>
+                <li data-percent="60"><svg viewbox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                    </svg><span>Linux</span><small></small></li>
+                <li data-percent="89"><svg viewbox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                    </svg><span>Visual Studio</span><small></small></li>
+                <li data-percent="65"><svg viewbox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                    </svg><span>Sublime Text</span><small></small></li>
+            </ul>
+        </div>
+        <div class="interests">
+            <h3><i class="fa fa-star"></i>Interests</h3>
+            <div class="interests-items">
+                <div class="draw"><i class="fa fa-terminal"></i><span>Coding</span></div>
+                <div class="movie"><i class="fa fa-film"></i><span>Movie</span></div>
+                <div class="music"><i class="fa fa-headphones"></i><span>Music</span></div>
+                <div class="game"><i class="fa fa-gamepad"></i><span>Game</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+{% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"> {% endcomment %}
 
 
-</body></html>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script id="rendered-js">
+(function() {
+  $('.skills-prog li').find('.skills-bar').each(function(i) {
+    $(this).find('.bar').delay(i * 150).animate({
+      width: $(this).parents().attr('data-percent') + '%'
+    }, 1000, 'linear', function() {
+      return $(this).css({
+        'transition-duration': '.5s'
+      });
+    });
+  });
+
+  $('.skills-soft li').find('svg').each(function(i) {
+    var c, cbar, circle, percent, r;
+    circle = $(this).children('.cbar');
+    r = circle.attr('r');
+    c = Math.PI * (r * 2);
+    percent = $(this).parent().data('percent');
+    cbar = ((100 - percent) / 100) * c;
+    circle.css({
+      'stroke-dashoffset': c,
+      'stroke-dasharray': c
+    });
+    circle.delay(i * 150).animate({
+      strokeDashoffset: cbar
+    }, 1000, 'linear', function() {
+      return circle.css({
+        'transition-duration': '.3s'
+      });
+    });
+    $(this).siblings('small').prop('Counter', 0).delay(i * 150).animate({
+      Counter: percent
+    }, {
+      duration: 1000,
+      step: function(now) {
+        return $(this).text(Math.ceil(now) + '%');
+      }
+    });
+  });
+
+}).call(this);
+    </script>
+
+
+
+{% comment %} ------------------------------------Resume-End----------------------------------------------------------------------- {% endcomment %}
+
+
+
 
 {% endblock body %}
-
